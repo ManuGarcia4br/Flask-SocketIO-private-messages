@@ -31,7 +31,7 @@ $(document).ready(function() {
 
         private_socket.emit('private_message', {'username' : recipient, 'message' : message_to_send});
     });
-
+    /* alert messages */
     private_socket.on('new_private_message', function(msg) {
         alert(msg);
     });
